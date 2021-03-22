@@ -40,7 +40,7 @@ the magic cookie is already closed."
     t))
 
 (defun %truename (filespec)
-  (namestring (truename filespec)))
+  (uiop:unix-namestring filespec))
 
 (defun magic-file (magic pathspec)
   "Returns a textual description of the contents of the PATHSPEC
